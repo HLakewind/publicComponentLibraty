@@ -5,5 +5,8 @@ export default defineConfig({
   runtime: {
     router: true,
   },
+  server: {
+    port: 1010,
+  },
   plugins: [appTools()],
 });
