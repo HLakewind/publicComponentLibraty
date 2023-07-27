@@ -10,7 +10,6 @@ export const headerStyle = style({
 
 export const contentStyle = style({
   height: '100%',
-  color: '#fff',
   backgroundColor: '#f0f2f5',
   padding: 24,
 });
@@ -24,7 +23,6 @@ globalStyle(`.${siderStyle}>.ant-layout-sider-children`, {
 
 export const footerStyle = style({
   textAlign: 'center',
-  color: '#fff',
   backgroundColor: '#7dbcea',
 });
 export const collapsedBtn = style({
@@ -32,4 +30,14 @@ export const collapsedBtn = style({
   position: 'absolute',
   top: '40%',
   right: -27,
+});
+export const siderMenu = style({
+  height: '100%',
+  borderRight: 0,
+  paddingTop: '10px',
+  fontSize: '12px',
+});
+globalStyle(`.${siderMenu}.ant-menu-vertical >.ant-menu-item`, {
+  lineHeight: '32px',
+  height: 32,
 });
